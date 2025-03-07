@@ -15,7 +15,7 @@ public class ChickenMenu {
         System.out.println("4. Soy sauce Chicken   | W 21,000 | 달콤짭짤한 간장");
         System.out.println("0. 종료                 | 종료");
 
-
+        // 반복문
         boolean running = true;
 
         while (running) {
