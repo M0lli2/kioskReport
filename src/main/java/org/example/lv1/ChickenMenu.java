@@ -32,17 +32,17 @@ public class ChickenMenu {
                     break;
                 case 1:
                     System.out.println("Fried Chicken 선택");
-                    break;
+                    break; // switch문을 탈출해서 while문으로 돌아가 반복
                 case 2:
                     System.out.println("Oven bake Chicken 선택");
-                    break;
+                    break; // switch문을 탈출해서 while문으로 돌아가 반복
                 case 3:
                     System.out.println("Seasoned Chicken 선택");
-                    break;
+                    break; // switch문을 탈출해서 while문으로 돌아가 반복
                 case 4:
                     System.out.println("Soy sauce Chicken 선택");
-                    break;
-                default:
+                    break; // switch문을 탈출해서 while문으로 돌아가 반복
+                default:   // 예외처리
                     System.out.println("옳바르지 않은 선택입니다. 다시 선택해주세요.");
             }
             System.out.println();
