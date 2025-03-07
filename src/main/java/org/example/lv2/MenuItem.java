@@ -19,7 +19,7 @@ public class MenuItem {
 
 
 
-      public static void main(String[] args) {
+    public static void main(String[] args) {
         List<MenuItem> menuItems = new ArrayList<>();
 
         // MenuItem 객체 추가
