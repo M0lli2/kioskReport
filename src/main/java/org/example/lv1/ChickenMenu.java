@@ -5,10 +5,10 @@ import java.util.Scanner; // 스캐너 사용
 public class ChickenMenu {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // 스캐너 선언
 
         // 치킨 메뉴 출력
-        System.out.println("[ CHICKEN MENU }");
+        System.out.println("[ CHICKEN MENU ]");
         System.out.println("1. Fried Chicken       | W 18,000 | 크리스피한 후라이드");
         System.out.println("2. Oven bake Chicken   | W 22,000 | 담백한 오븐구이");
         System.out.println("3. Seasoned Chicken    | W 21,000 | 매콤달콤한 양념");
