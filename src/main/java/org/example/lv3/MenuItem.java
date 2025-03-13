@@ -18,7 +18,7 @@ public class MenuItem {
     public String getName() {
         return name;
     }
-    public  int getPrice() {
+    public int getPrice() {
         return price;
     }
     public String getInfo() {
