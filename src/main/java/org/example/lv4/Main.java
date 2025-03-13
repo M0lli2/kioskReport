@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         // 메뉴 아이템 생성(치킨)
+        Menu chickenMenu = new Menu("Chicken"); // 카테고리별 메뉴 객체 생성
         Chicken chicken1 = new Chicken("Fried Chicken", 18000, "크리스피한 후라이드치킨");
         Chicken chicken2 = new Chicken("Oven bake Chicken", 22000, "담백한 오븐구이치킨");
         Chicken chicken3 = new Chicken("Seasoned Chicken", 21000, "매콤달콤한 양념치킨");
@@ -20,6 +21,7 @@ public class Main {
         chickens.add(chicken4);
 
         // 메뉴 아이템 생성(피자)
+        Menu pizzaMenu = new Menu("Pizza");// 카테고리별 메뉴 객체 생성
         Pizza pizza1 = new Pizza("Cheese Pizza", 21000, "치즈가 늘어나는 맛있는 피자");
         Pizza pizza2 = new Pizza("Pepperoni Pizza", 23000, "짭짤하고 기름진 맛있는 피자");
         Pizza pizza3 = new Pizza("Margherita Pizza", 24000, "신선하고 담백한 맛있는 피자");
@@ -33,6 +35,7 @@ public class Main {
         pizzas.add(pizza4);
 
         // 메뉴 아이템 생성(음료)
+        Menu drinksMenu = new Menu("Drinks");// 카테고리별 메뉴 객체 생성
         Drinks drink1 = new Drinks("Cheese Pizza", 21000, "치즈가 늘어나는 맛있는 피자");
         Drinks drink2 = new Drinks("Pepperoni Pizza", 23000, "짭짤하고 기름진 맛있는 피자");
         Drinks drink3 = new Drinks("Margherita Pizza", 24000, "신선하고 담백한 맛있는 피자");
@@ -48,8 +51,12 @@ public class Main {
 
 
 
-        // 키오스크
-        Kiosk kiosk = new Kiosk(chickens, pizzas, drinks);
+        // 키오스크 객체 생성
+        Kiosk kiosk = new Kiosk();
+        // Kiosk에 메뉴 추가
+        kiosk.addMenu(chickenMenu);
+        kiosk.addMenu(pizzaMenu);
+        kiosk.addMenu(drinksMenu);
         kiosk.start();
     }
 }
