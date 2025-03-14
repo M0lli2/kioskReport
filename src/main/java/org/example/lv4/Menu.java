@@ -13,6 +13,11 @@ public class Menu {
         this.category = category;
         this.menuItems =new ArrayList<>();
     }
+    // 메뉴아이템 추가
+    public void addMenuItem(MenuItem item){
+        menuItems.add(item);
+    }
+
     //카테고리 이름 반환
     public String   getCategory() {
         return category;
@@ -30,5 +35,4 @@ public class Menu {
             System.out.println((i + 1) + ". " + item.getName()+" | W "+item.getPrice()+" | "+item.getInfo());
         }
     }
-
 }

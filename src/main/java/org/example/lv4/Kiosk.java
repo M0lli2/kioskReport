@@ -46,6 +46,7 @@ public class Kiosk {
             select.printMenu();
             System.out.println("메뉴를 선택하세요(뒤로가려면 '0'입력):");
             int choiceMenu = scanner.nextInt();
+            scanner.nextLine();
 
             if (choiceMenu == 0) {
                 continue;
